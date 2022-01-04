@@ -1,0 +1,86 @@
+ select
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 49%;
+    padding: 15px;
+    border: 2px solid #d4002a;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+#jours
+{
+    width:45% ;
+}
+@media (max-width:800px) 
+{
+    #jours
+    {
+        width:38% ;
+    }
+}
+.choix1
+{
+
+margin: auto;
+
+
+}
+.choix1 input
+{
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px #d4002a;
+  
+}
+.choix1 input:hover
+{
+    background-color: #d4002a;
+    color: white;
+}
+#Engins
+{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px #d4002a;
+ 
+}
+
+#Engins:hover
+{
+    background-color: #d4002a;
+    color: white;
+}
+#reservation
+{
+    background-color: black;
+  color: #d4002a;
+ border-radius: 10px;
+}
+#totale
+{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding: 15px;
+  border: 2px solid #d4002a;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

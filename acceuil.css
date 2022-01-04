@@ -1,0 +1,383 @@
+*{
+  margin: 0;
+  padding:0;
+}
+#acceuil
+{
+  background-color: black;
+  color: #d4002a;
+ border-radius: 10px;
+
+
+}
+#gallerie
+{
+  background-color: black;
+  color: #d4002a;
+ border-radius: 10px;
+}
+.overlay{
+  color: #fff;
+  background: url(./images/background1.jpg), rgba(7, 33, 46, 0.6);
+  background-size: 100% 700px; 
+  background-position: fixed;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  
+}
+.navbar {
+  background-color: #d4002a;
+  box-shadow: 5px 4px 5px #d4002a; 
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  width: 100%;
+}
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-item {
+  display: flex;
+  float: right;
+  font-size: 18px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+.navbar .menu-item a {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  transition: 0.6s;
+}
+
+.navbar .menu-item a:hover {
+  color: black;
+}
+
+.navbar #check {
+  display: none;
+}
+
+@media (max-width:800px) {
+  .navbar .menu-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar .menu-btn label {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    padding: 13px;
+    transition: 1s;
+    border-radius: 6px;
+  }
+  .navbar .menu-btn label:hover,.navbar  #check:checked ~ .menu-btn label {
+    background-color: #d4002a;
+  }
+  .navbar .menu-btn label span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    border-top: 2px solid #eee;
+  }
+  .navbar .menu-item {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 2;
+  }
+  .navbar .menu-item a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  .navbar #check:not(:checked) ~ .menu-item {
+    height: 0px;
+  }
+  .navbar #check:checked ~ .menu-item {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+h1 {
+  margin: 0px;
+  font-size: 30px;
+  padding :10px;
+  color: #fff;
+  font-weight: bold;
+  font-style:  italic;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+ padding-top: 220px;
+  font-family: Poppins;
+  color: #fff;
+}
+span{
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+}
+.header p{
+  margin-left: auto;
+  font-size: 17px;
+  color: #fff;
+  font-style: italic;
+  padding: 0 130px;
+  line-height: 0px;
+  text-align: center;
+  font-family: Open Sans;
+  margin-top: 50px;
+}
+
+#countdowntimer { 
+  text-align: center;
+  padding-top: 70px;
+  font-size:72px;
+  letter-spacing: 10px;
+} 
+@media (max-width:500px) {
+  #countdowntimer { 
+  font-size:60px;
+  letter-spacing: 5px;
+  }
+  .header p{
+    padding: 0 20px;
+    font-size: 8px;
+  }
+  h2
+  {
+    font-size: 25px;
+  }
+}
+@media (max-width:500px) {
+  #countdowntimer { 
+  font-size:40px;
+    letter-spacing: 5px;
+  }
+}
+.count{
+   color: #fff;
+}
+.mail{
+  text-align: center;
+
+}
+.mail input[type= "email"]{
+  width: 200px;
+  padding: 7px 10px;
+  background: transparent;
+  border: 3px solid #d4002a;
+  border-radius: 8px;
+  transition: 1s;
+  color: #d4002a;
+  background-color: white;
+}
+.mail input[type= "email"]:hover, .mail input[type= "email"]:focus{
+  background: #fff;
+  cursor: auto;
+  transform: scale(1.1);
+  margin-right: 12px;
+}
+.mail input[type= "submit"]{
+  width: 100px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #d4002a;
+  font-weight: bold;
+  color: #fff;
+  height: 35.33px;
+  transition: 1s;
+}
+.mail input[type= "submit"]:hover{
+  transform: scale(1.1);
+  margin-left: 6px;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 310px;
+  padding: 20px;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 80px;
+}
+
+.description > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+
+}
+
+.titres
+{
+  margin-top: 80px;
+}
+article #titre1{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+text-align: center;
+color: black;
+margin-top: 80px;
+}
+#titre1 span{
+color:#d4002a;
+}
+#titre2
+{ 
+font-family: Poppins;
+text-align: center;
+color: #555555;
+font-style: normal;
+font-size: 18px;
+}
+div.promotion 
+{
+  margin-top: 80px;
+background-color: #26272b;
+min-height: 300px;
+
+}
+.promotion p{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+color: white;
+
+padding: 50px;
+}
+.promotion span{
+  color: white;
+}
+.promotion button
+{
+  height: 50px;
+  width: 100px;
+margin-left: 80px;
+border-radius: 20px;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+background-color: #d4002a;
+border: solid white;
+color: white;
+}
+@media (max-width:500px) 
+{
+  div.promotion 
+  {
+    margin-top: 80px;
+  background-color: #26272b;
+  min-height: 300px;
+  }
+
+}
+
+.partie3
+{
+background-color: black;
+margin-top: 80px;
+height: 300px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding-top: 20px;
+  flex-flow:row wrap;
+
+}
+
+.flex-container>p {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 277px;
+  height: 215px; 
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+ 
+}
+.flex-container span{
+width: 134px;
+height: 45px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+color:white ;
+line-height: 80px;
+ 
+}
+@media (max-width:500px) 
+{
+  .partie3
+{
+background-color: black;
+margin-top: 80px;
+height: 800px;
+}
+}
+.copyright {
+  border-top: 1px solid #232a35;
+  background-color:black ;
+}
+.gmail
+{
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 30px;
+  height: 40px;
+
+}
+.gmail a{
+  color: white;
+  text-decoration: none;
+}
+#Acceuil
+{
+  background-color: black;
+  color: #d4002a;
+ border-radius: 10px;
+}

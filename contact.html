@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html Lang="fr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="acceuil.css">
+<link rel="stylesheet" href="contact.css">
+<meta name="description" content="Ma description personnalisée">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Contact</title>
+</head>
+<body>
+    <header class="overlay">
+        <div class="header">
+          <div class="navbar">
+        <input type="checkbox" id="check">
+            <a href="#"><h1>Location <span>Faho.</span></h1></a>
+        <div class="menu-btn">
+          <label for="check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="menu-item">
+          <a href="index.html">Acceuil</a>
+          <a href="responsive.html">Reservation</a>
+          <a href="#" id="contact">Contact</a>
+          <a href="gallerie.html">Gallerie</a>
+        </div>
+      </div>
+          <h2>Contactez-nous</h2>
+          <p><br>
+            Bénéficiez d'une assistance 24h/24 et 7j/7. </p>
+      <div class="content">
+        <div id="countdowntimer">
+        <span class="count"><span>
+        </div>
+          <div class="mail">
+            <form >
+              <input name="mail" type="email" Placeholder="Contactez-nous">
+              <input name="send" type="submit" value="Envoyer">
+            </form>
+          </div>
+        </div>
+      
+        </header>
+  <section>
+  <article class="formulaire">
+<div class="contact">
+  <p class="question">Est ce que vous avez une question?</p>
+  <p class="definition">La location de voiture courte durée ou location de véhicule est un service proposé par une entreprise offrant aux clients la location des automobiles pour de courtes périodes pouvant aller de quelques heures à quelques semaines.</p>
+</div>
+  <form  class="information">
+    
+    <label for="fname">Prenom:</label><br>
+   <input type="text" id="Prenom" placeholder="XXXX"><br>
+   <label for="fname">Nom:</label><br>
+   <input type="text" id="Nom" placeholder="XXXX"><br>
+   <label for="fname">Email:</label><br>
+   <input type="text" id="Email" placeholder="XXXX@gmail.com"><br>
+   <label for="fname">Sujet:</label><br>
+   <input type="text" id="Sujet" placeholder="Sujet"><br>
+   <label for="fname">Message:</label><br>
+   <textarea id="Message" placeholder="Ecrivez votre Message "></textarea><br>
+   <input type="submit" value="Submit" id="submit" onClick="formulaire()">
+  </form> 
+  </article>
+  <div class="promotion">
+    <p>December sale is on!
+        with big 
+       <span>Discount...</span> <br>
+        Sale! 
+        Upto 
+       <span> 50%</span> 
+        off </p>
+        <button>Reservez!</button>   
+
+</div>
+  <footer>
+    <div class="partie3">
+    <div class="flex-container">
+      <p><span>> Location Faho</span><br>
+            Avis, plus exactement Avis Rent a Car, est une entreprise americaine de location de voitures, filiale de la multinationale americaine Avis Budget Group, qui gere la marque Avis.
+        </p>
+        <p><span>> Reservation</span><br>
+            Decouvrez Toutes Nos Destinations et Trouvez le Vol Ideal au Meilleur Prix! Profitez des offres speciales du jour, economisez jusqu'a 60% en comparant les vols ! Comparaison Gratuite. Vols Pas Chers. Reservez au Meilleur Prix. Reductions jusqu'a60%.
+          </p>
+        <p><span>> Black Friday</span><br>
+            Aucun frais Cache, Garantie Meilleur Prix, Annulation Gratuite, Conseils Assurances. Louez au meilleur Prix dans le Monde. Aucun Frais Cache. Comparez et economisez ! Dans le terminal. Prise des clefs rapide. Puissant vehicule. Kilometrage illimite.
+          </p> 
+      </div>
+      <div class="copyright">
+        <div class="gmail">
+          <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Fatma karkach</a>,  All Rights Reserved.
+          </p>
+    </div>
+      </footer>
+</section>
+<script>
+      function formulaire() 
+      {  
+          var a =document.getElementById("Prenom").value;
+          var b =document.getElementById("Nom").value;
+          var c =document.getElementById("Email").value;
+          var d =document.getElementById("Sujet").value;
+          var e =document.getElementById("Message").value;
+        alert(a +"\n"+ b + "\n"+ c + "\n" + d +"\n"+ e+"\n");
+
+     
+      }
+    
+</script>
+</body>
+</html>

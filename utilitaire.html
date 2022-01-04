@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="acceuil.css">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="reservation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Reservation</title>
+</head>
+<body>
+          <div class="navbar">
+        <input type="checkbox" id="check">
+            <a href="#"><h1>Location <span>Faho.</span></h1></a>        
+        <div class="menu-item">
+          <a href="index.html">Acceuil</a>
+          <a href="responsive.html"id="reservation">Reservation</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallerie.html" >Gallerie</a>
+        </div>
+      </div>      
+        </header>
+  <section>
+  <article class="formulaire">
+<div class="contact">
+  <p class="question">Réservez et gagnez en tranquillité !</p>
+  <p class="definition">La location de voiture courte durée ou location de véhicule est un service proposé par une entreprise offrant aux clients la location des automobiles pour de courtes périodes pouvant aller de quelques heures à quelques semaines.</p>
+</div>
+<form  class="information">
+    <label for="carburant">Carburant:</label><br>
+    <select  id="carburant">
+     <option value="Choix">Choisissez</option>
+     <option value="Diesel">Diesel</option>
+   </select>
+    <br>
+    <label for="vitesse">Boite a vitesse :</label><br>
+    <select  id="b-vitesse">
+     <option value="Choix" placeholder="Choisissez votre Choix">Choisissez </option>
+     <option value="Manuelle">Manuelle</option>
+   </select>
+    <br>
+   <label for="d-reservation">duree de reservation:</label><br>
+   <input type="text" id="jours" placeholder="jours"><br>
+   <input type="button" value="Reserver" id="submit" onclick="Prix()"><br>
+   <label for="d-reservation">Prix totale en £:</label>
+   <p id="totale">00</p>
+  </form> 
+  </article>
+  <div class="promotion">
+    <p>December sale is on!
+        with big 
+       <span>Discount...</span> <br>
+        Sale! 
+        Upto 
+       <span> 50%</span> 
+        off </p>
+        <button>Reservez!</button>   
+
+</div>
+  <footer>
+    <div class="partie3">
+    <div class="flex-container">
+      <p><span>> Location Faho</span><br>
+            Avis, plus exactement Avis Rent a Car, est une entreprise americaine de location de voitures, filiale de la multinationale americaine Avis Budget Group, qui gere la marque Avis.
+        </p>
+        <p><span>> Reservation</span><br>
+            Decouvrez Toutes Nos Destinations et Trouvez le Vol Ideal au Meilleur Prix! Profitez des offres speciales du jour, economisez jusqu'a 60% en comparant les vols ! Comparaison Gratuite. Vols Pas Chers. Reservez au Meilleur Prix. Reductions jusqu'a60%.
+          </p>
+        <p><span>> Black Friday</span><br>
+            Aucun frais Cache, Garantie Meilleur Prix, Annulation Gratuite, Conseils Assurances. Louez au meilleur Prix dans le Monde. Aucun Frais Cache. Comparez et economisez ! Dans le terminal. Prise des clefs rapide. Puissant vehicule. Kilometrage illimite.
+          </p> 
+      </div>
+      <div class="copyright">
+        <div class="gmail">
+          <p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Fatma karkach</a>,  All Rights Reserved.
+          </p>
+    </div>
+      </footer>
+</section>
+<script>
+      function Prix() 
+      {  
+          var a =document.getElementById("carburant").value;
+          var prix=0;
+          var jour=document.getElementById("jours").value;        
+         if(a=="Diesel")
+          {
+            prix=jour*16*1.21;
+          }
+     
+          document.getElementById('totale').innerHTML=prix;
+        }    
+</script>
+</body>
+</html>
